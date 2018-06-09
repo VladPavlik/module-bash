@@ -3,7 +3,7 @@
 @test "Find emails in file without emails" {
   run bash ex09.sh -e resources/email1.txt
   
-  [ "$status" -eq 1 ]
+  [ "$status" -eq 0 ]
   [ "$output" = ""  ]
 }
 
@@ -17,7 +17,7 @@
 @test "Find urls in file without urls" {
   run bash ex09.sh -u resources/url1.txt
   
-  [ "$status" -eq 1 ]
+  [ "$status" -eq 0 ]
   [ "$output" = ""  ]
 }
 
